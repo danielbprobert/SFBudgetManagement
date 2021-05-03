@@ -4,6 +4,7 @@ project:
     package:
         name: SFBudgetManagement
         api_version: '50.0'
+        namespace: sfbm2021
     git:
     source_format: sfdx
 
