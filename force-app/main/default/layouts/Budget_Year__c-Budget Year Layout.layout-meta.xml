@@ -74,9 +74,9 @@
         <excludeButtons>New</excludeButtons>
         <fields>NAME</fields>
         <fields>Budget_Version__c</fields>
-        <fields>Amount__c</fields>
-        <fields>Recommend__c</fields>
-        <fields>Award__c</fields>
+        <fields>Projected__c</fields>
+        <fields>Actual__c</fields>
+        <fields>Difference__c</fields>
         <relatedList>Budget_Line__c.Budget_Year__c</relatedList>
     </relatedLists>
     <showEmailCheckbox>false</showEmailCheckbox>
