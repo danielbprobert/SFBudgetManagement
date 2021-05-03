@@ -1,0 +1,24 @@
+minimum_cumulusci_version: '3.34.1'
+project:
+    name: SFBudgetManagement
+    package:
+        name: SFBudgetManagement
+        api_version: '50.0'
+    git:
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/SFBudgetManagement/tests
+            options:
+                outputdir: robot/SFBudgetManagement/results
+
+    robot_testdoc:
+        options:
+            path: robot/SFBudgetManagement/tests
+            output: robot/SFBudgetManagement/doc/SFBudgetManagement_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
