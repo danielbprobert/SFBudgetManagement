@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomApplication xmlns="http://soap.sforce.com/2006/04/metadata">
+    <brand>
+        <headerColor>#7A2691</headerColor>
+        <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
+    </brand>
+    <description>This application provides access to the tables that support budget management in salesforce</description>
+    <formFactors>Small</formFactors>
+    <formFactors>Large</formFactors>
+    <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
+    <isNavPersonalizationDisabled>false</isNavPersonalizationDisabled>
+    <label>Budget Management</label>
+    <navType>Standard</navType>
+    <tabs>standard-home</tabs>
+    <tabs>Budget__c</tabs>
+    <tabs>Budget_Line__c</tabs>
+    <tabs>Budget_Version__c</tabs>
+    <tabs>Budget_Year__c</tabs>
+    <tabs>standard-report</tabs>
+    <tabs>standard-Dashboard</tabs>
+    <uiType>Lightning</uiType>
+    <utilityBar>Budget_Management_UtilityBar</utilityBar>
+</CustomApplication>
