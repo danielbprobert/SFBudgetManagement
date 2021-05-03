@@ -1,45 +1,29 @@
-Insert Accounts:
-  sf_object: Account
-  table: Account
+Insert Budget_Version__c:
+  sf_object: Budget_Version__c
   fields:
-    Name: Name
-    Description: Description
-    BillingStreet: BillingStreet
-    BillingCity: BillingCity
-    BillingState: BillingState
-    BillingPostalCode: BillingPostalCode
-    BillingCountry: BillingCountry
-    ShippingStreet: ShippingStreet
-    ShippingCity: ShippingCity
-    ShippingState: ShippingState
-    ShippingPostalCode: ShippingPostalCode
-    ShippingCountry: ShippingCountry
-    Phone: Phone
-    Fax: Fax
-    Website: Website
-    NumberOfEmployees: NumberOfEmployees
-    AccountNumber: AccountNumber
-    Site: Site
-    Type: Type
-Insert Contacts:
-  sf_object: Contact
-  table: Contact
+  - Name
+Insert Budget_Year__c:
+  sf_object: Budget_Year__c
   fields:
-    Salutation: Salutation
-    FirstName: FirstName
-    LastName: LastName
-    Email: Email
-    Phone: Phone
-    MobilePhone: MobilePhone
-    OtherPhone: OtherPhone
-    HomePhone: HomePhone
-    Title: Title
-    Birthdate: Birthdate
-    MailingStreet: MailingStreet
-    MailingCity: MailingCity
-    MailingState: MailingState
-    MailingPostalCode: MailingPostalCode
-    MailingCountry: MailingCountry
+  - End_Date__c
+  - Name
+  - Start_Date__c
+Insert Budget__c:
+  sf_object: Budget__c
+  fields:
+  - Line_Description__c
   lookups:
-    AccountId:
-      table: Account
+    Budget_Version__c:
+      table: Budget_Version__c
+Insert Budget_Line__c:
+  sf_object: Budget_Line__c
+  fields:
+  - Actual__c
+  - Projected__c
+  lookups:
+    Budget_Version__c:
+      table: Budget_Version__c
+    Budget_Year__c:
+      table: Budget_Year__c
+    Budget__c:
+      table: Budget__c
